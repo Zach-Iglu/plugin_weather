@@ -13,6 +13,6 @@ plugin_name="Weather"
 
 
 function setup() {
-  echo "This is a setup for weather"
+  echo "No Setup for Weather"
 }
 "$@"
