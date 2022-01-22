@@ -15,7 +15,9 @@ initializePreset
 
 
 
-
+function setup() {
+  echo "This is a setup for weather"
+}
 
 #### END USER CODe ####
 finishPreset
