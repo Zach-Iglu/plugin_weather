@@ -1,16 +1,13 @@
-source ../../../preset_updater.sh ## ALWAYS INCLUDE THIS
-preset_file_name=`basename "$0"`
-desc="INSERT DESCRIPTION HERE"
-cooldown="0" # cooldown in minutes
-initializePreset
-### Valid Functions Below ###
-# getPluginVal <key>
-# getSettingsVal <key>
-# getDeviceVal <ip> <key>
-# setDeviceVal <ip> <key> <value>
-# getEvent <ip> <key>
-#### BEGIN USER CODe ####
-
+source ../../../plugin_updater.sh ## ALWAYS INCLUDE THIS
+plugin_file_name=`basename "$0"`
+### DO WHATEVER YOU WANT HERE,THEN UPDATE THOSE VALUES TO THE DATABASE WITH THE FUNCTIONS BELOW:
+# updateVariable <key> <value>
+# displayPluginInfo
+### PLUGIN CONFIGURATION ###
+author="Zach"
+version="0"
+plugin_name="Weather"
+### END PLUGIN CONFIGURATION
 
 
 
@@ -18,7 +15,4 @@ initializePreset
 function setup() {
   echo "This is a setup for weather"
 }
-
-#### END USER CODe ####
-finishPreset
 "$@"
